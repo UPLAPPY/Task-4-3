@@ -17,7 +17,8 @@
 	  RowDefinitions="50,*"
 	  ColumnDefinitions="*,200"
 	  >
-        <StackPanel Orientation="Horizontal"
+        <StackPanel Grid.Row="0" Grid.Column="0"
+					Orientation="Horizontal"
 					FlowDirection="LeftToRight">
 			<Button Width="" Background="white">Home</Button>
 			<Button Width="" Background="white">About </Button>
@@ -26,5 +27,11 @@
 			<Button Width="" Background="white">Blog`s Main Topic 3 </Button>
 			<Button Width="" Background="white">Associated blogs </Button>
 			</StackPanel>
+	  <StackPanel Grid.Row="0" Grid.Column="1"
+				  Orientation="Horizontal"
+				  FlowDirection="RightToLeft"
+				  Margin="10">
+		  <Button Width="" Background="White">RSS</Button>
+	  </StackPanel>
 	  </Grid>
 </UserControl>
