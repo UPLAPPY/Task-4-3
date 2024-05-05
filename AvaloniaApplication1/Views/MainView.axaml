@@ -3,7 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:AvaloniaApplication1.ViewModels"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             mc:Ignorable="d" Width="900" Height="600"
              x:Class="AvaloniaApplication1.Views.MainView"
              x:DataType="vm:MainViewModel">
   <Design.DataContext>
@@ -12,5 +12,19 @@
     <vm:MainViewModel />
   </Design.DataContext>
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+  <Grid
+	  ShowGridLines="True"
+	  RowDefinitions="50,*"
+	  ColumnDefinitions="*,200"
+	  >
+        <StackPanel Orientation="Horizontal"
+					FlowDirection="LeftToRight">
+			<Button Width="" Background="white">Home</Button>
+			<Button Width="" Background="white">About </Button>
+			<Button Width="" Background="white">Blog`s Main Topic 1 </Button>
+			<Button Width="" Background="white">Blog`s Main Topic 2 </Button>
+			<Button Width="" Background="white">Blog`s Main Topic 3 </Button>
+			<Button Width="" Background="white">Associated blogs </Button>
+			</StackPanel>
+	  </Grid>
 </UserControl>
