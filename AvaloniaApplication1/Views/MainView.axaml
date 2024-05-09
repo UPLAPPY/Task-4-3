@@ -13,11 +13,19 @@
   </Design.DataContext>
 
   <Grid
-	  ShowGridLines="True"
+	  ShowGridLines="False"
 	  RowDefinitions="50,*"
 	  ColumnDefinitions="*,200"
 	  >
-        <StackPanel Grid.Row="0" Grid.Column="0"
+	  <StackPanel Grid.Row="0" Grid.Column="0"
+				  Orientation="Vertical"
+				  Margin="0, 5, 0, 0">
+		  <Canvas>
+			  <Line StartPoint="0,45" EndPoint="900,45" Stroke="Black" > </Line>
+			  <Line StartPoint="0,5" EndPoint="900,0" Stroke="Black" > </Line>
+				   </Canvas>
+		  <StackPanel
+			  Margin="0, 7, 0, 0"
 					Orientation="Horizontal"
 					FlowDirection="LeftToRight">
 			<Button Width="" Background="white">Home</Button>
@@ -27,6 +35,8 @@
 			<Button Width="" Background="white">Blog`s Main Topic 3 </Button>
 			<Button Width="" Background="white">Associated blogs </Button>
 			</StackPanel>
+	  </StackPanel>
+        
 	  <StackPanel Grid.Row="0" Grid.Column="1"
 				  Orientation="Horizontal"
 				  FlowDirection="RightToLeft"
