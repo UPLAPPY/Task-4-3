@@ -52,7 +52,7 @@
 		  <TextBlock Margin="100,1,1,1"> Yesterday </TextBlock>
 		  <TextBlock TextWrapping="Wrap" Margin="1,20,1,1"> Donec sodales ligula sed gravida maximus. Integer tincidunt purus eu libero auctor, vitae dapibus risus condimentum. Proin laoreet euismod nisl, id rhoncus elit ultricies hendrerit. </TextBlock>
 		  <TextBlock TextDecorations="Underline" Margin="130,10,1,1"> More</TextBlock>
-		  <TextBlock Margin="100,1,1,1"> Yesterday </TextBlock>
+		  <TextBlock Margin="100,1,1,1"> 1 week ago </TextBlock>
 		  </StackPanel>
 	  
 	  <StackPanel Grid.Row="1" Grid.Column="0"
